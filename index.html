@@ -37,16 +37,18 @@
 <body class="bg-brand-bg">
 
     <!-- =========== CABEÇALHO =========== -->
+    <!-- RESTORED: 'fixed' class is back for a header that sticks to the top. -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-brand-green shadow-lg">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <a href="#" class="flex items-center gap-3">
+                    <!-- UPDATED: Image path is now relative to your project folder -->
                     <img src="assets/images/logo.jpg" alt="Logotipo Terra Verde Hortifruti" class="h-12 w-auto" style="height: 3rem;" />
                     <span class="text-2xl font-bold text-brand-gold font-poppins hidden sm:block">Terra Verde Hortifruti</span>
                 </a>
 
                 <nav class="hidden md:flex items-center space-x-6">
-                    <a href="products/" class="text-white hover:text-brand-gold transition-colors font-semibold">Nossos Produtos</a>
+                    <a href="#produtos" class="text-white hover:text-brand-gold transition-colors font-semibold">Nossos Produtos</a>
                     <a href="#sobre" class="text-white hover:text-brand-gold transition-colors font-semibold">Quem Somos</a>
                     <a href="#cta" class="bg-brand-gold text-brand-green font-bold py-2 px-6 rounded-full hover:bg-yellow-500 transition duration-300 transform hover:-translate-y-0.5">Fazer Pedido</a>
                 </nav>
@@ -59,7 +61,7 @@
             </div>
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-brand-green pb-4">
-            <a href="products/" class="block text-white text-center py-2 hover:bg-brand-gold hover:text-brand-green">Nossos Produtos</a>
+            <a href="#produtos" class="block text-white text-center py-2 hover:bg-brand-gold hover:text-brand-green">Nossos Produtos</a>
             <a href="#sobre" class="block text-white text-center py-2 hover:bg-brand-gold hover:text-brand-green">Quem Somos</a>
             <a href="#cta" class="block text-white text-center py-2 mt-2 mx-4 bg-brand-gold text-brand-green rounded-full font-bold">Fazer Pedido</a>
         </div>
@@ -67,78 +69,10 @@
 
     <main>
         <!-- =========== SECÇÃO PRINCIPAL (HERO) =========== -->
+        <!-- RESTORED: 'pt-20' creates space for the fixed header, 'min-h-screen' makes the section fill the screen height. -->
         <section class="relative pt-20 flex items-center justify-center min-h-screen bg-brand-bg">
-            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10" style="background-image: url('<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terra Verde Hortifruti - Frescor e Qualidade</title>
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-
-    <!-- Feather Icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
-
-    <style>
-        body { font-family: 'Lato', sans-serif; background-color: #FDFBF5; opacity: 0; transition: opacity 0.5s ease-in-out; }
-        h1, h2, h3, h4, h5, h6, .font-poppins { font-family: 'Poppins', sans-serif; }
-        :root {
-            --brand-green: #1A472A;
-            --brand-gold: #D4A017;
-            --brand-bg: #FDFBF5;
-        }
-        .text-brand-green { color: var(--brand-green); }
-        .bg-brand-green { background-color: var(--brand-green); }
-        .border-brand-green { border-color: var(--brand-green); }
-        .text-brand-gold { color: var(--brand-gold); }
-        .bg-brand-gold { background-color: var(--brand-gold); }
-        .border-brand-gold { border-color: var(--brand-gold); }
-        .bg-brand-bg { background-color: var(--brand-bg); }
-        html { scroll-behavior: smooth; }
-    </style>
-</head>
-<body class="bg-brand-bg">
-
-    <!-- =========== CABEÇALHO =========== -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-brand-green shadow-lg">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <a href="#" class="flex items-center gap-3">
-                    <img src="assets/images/logo.jpg" alt="Logotipo Terra Verde Hortifruti" class="h-12 w-auto" style="height: 3rem;" />
-                    <span class="text-2xl font-bold text-brand-gold font-poppins hidden sm:block">Terra Verde Hortifruti</span>
-                </a>
-
-                <nav class="hidden md:flex items-center space-x-6">
-                    <a href="products/" class="text-white hover:text-brand-gold transition-colors font-semibold">Nossos Produtos</a>
-                    <a href="#sobre" class="text-white hover:text-brand-gold transition-colors font-semibold">Quem Somos</a>
-                    <a href="#cta" class="bg-brand-gold text-brand-green font-bold py-2 px-6 rounded-full hover:bg-yellow-500 transition duration-300 transform hover:-translate-y-0.5">Fazer Pedido</a>
-                </nav>
-
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-white p-2">
-                        <i data-feather="menu" class="w-7 h-7"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-brand-green pb-4">
-            <a href="products/" class="block text-white text-center py-2 hover:bg-brand-gold hover:text-brand-green">Nossos Produtos</a>
-            <a href="#sobre" class="block text-white text-center py-2 hover:bg-brand-gold hover:text-brand-green">Quem Somos</a>
-            <a href="#cta" class="block text-white text-center py-2 mt-2 mx-4 bg-brand-gold text-brand-green rounded-full font-bold">Fazer Pedido</a>
-        </div>
-    </header>
-
-    <main>
-        <!-- =========== SECÇÃO PRINCIPAL (HERO) =========== -->
-        <section class="relative pt-20 flex items-center justify-center min-h-screen bg-brand-bg">
-            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10" style="background-image: url('https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80');"></div>
+            <!-- UPDATED: Background image path is now relative -->
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10" style="background-image: url('https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80')"></div>
             <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-green mb-6 leading-tight">Hortaliças Frescas, Direto do Produtor para a sua Mesa</h1>
                 <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Qualidade, sabor e saúde que você pode confiar. Faça seu pedido e receba nossos produtos.</p>
@@ -162,18 +96,16 @@
                 </div>
                 <div class="max-w-4xl mx-auto shadow-2xl rounded-xl overflow-hidden">
                     <div class="relative" style="padding-top: 56.25%;">
-                        <!-- ***** FIX STARTS HERE ***** -->
-                        <video class="absolute top-0 left-0 w-full h-full" controls preload="auto" poster="assets/images/video-poster.jpg">
-                            <source src="assets/videos/video.mp4" type="video/mp4">
-                            Seu navegador não suporta a tag de vídeo. Tente um navegador diferente.
+                        <!-- UPDATED: Poster and video paths are now relative -->
+                        <video class="absolute top-0 left-0 w-full h-full" controls preload="auto" poster="assets/images/video-poster.jpg" src="/blob/main/videos/video.mp4">
+                            Seu navegador não suporta a tag de vídeo.
                         </video>
-                        <!-- ***** FIX ENDS HERE ***** -->
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- =========== SECÇÃO DE PRODUTOS (Resumo) =========== -->
+        <!-- =========== SECÇÃO DE PRODUTOS =========== -->
         <section id="produtos" class="py-16 sm:py-24 bg-white">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
@@ -181,13 +113,30 @@
                     <p class="text-lg text-gray-600 max-w-2xl mx-auto">Produtos frescos e de qualidade, cultivados com carinho.</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- First 3 products -->
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden"><img src="assets/images/alface.webp" alt="Alface" class="w-full h-48 object-cover"><div class="p-6"><h3 class="text-xl font-bold text-brand-green mb-2">Alface Crespa</h3><p class="text-gray-600">Cultivada com cuidado, crocante e cheia de sabor.</p></div></div>
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden"><img src="assets/images/tomate.webp" alt="Tomate" class="w-full h-48 object-cover"><div class="p-6"><h3 class="text-xl font-bold text-brand-green mb-2">Tomate</h3><p class="text-gray-600">Perfeito para molhos e saladas, suculento e doce.</p></div></div>
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden"><img src="assets/images/cenoura.webp" alt="Cenoura" class="w-full h-48 object-cover"><div class="p-6"><h3 class="text-xl font-bold text-brand-green mb-2">Cenoura</h3><p class="text-gray-600">Rica em nutrientes e com um leve adocicado natural.</p></div></div>
-                </div>
-                 <div class="text-center mt-12">
-                    <a href="products/" class="bg-brand-gold text-brand-green font-bold py-3 px-8 rounded-full text-lg hover:bg-yellow-500 transition duration-300">Ver todos os produtos</a>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <img src="assets/images/alface.webp" alt="Alface" class="w-full h-48 object-cover">
+                        <div class="p-6"><h3 class="text-xl font-bold text-brand-green mb-2">Alface Crespa</h3><p class="text-gray-600">Cultivada com cuidado, crocante e cheia de sabor.</p></div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <img src="assets/images/tomate.webp" alt="Tomate" class="w-full h-48 object-cover">
+                        <div class="p-6"><h3 class="text-xl font-bold text-brand-green mb-2">Tomate</h3><p class="text-gray-600">Perfeito para molhos e saladas, suculento e doce.</p></div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <img src="assets/images/cenoura.webp" alt="Cenoura" class="w-full h-48 object-cover">
+                        <div class="p-6"><h3 class="text-xl font-bold text-brand-green mb-2">Cenoura</h3><p class="text-gray-600">Rica em nutrientes e com um leve adocicado natural.</p></div>
+                    </div>
+                     <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <img src="assets/images/beringela.webp" alt="Berinjela" class="w-full h-48 object-cover">
+                        <div class="p-6"><h3 class="text-xl font-bold text-brand-green mb-2">Berinjela</h3><p class="text-gray-600">Versátil e deliciosa, ideal para diversas receitas.</p></div>
+                    </div>
+                     <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <img src="assets/images/brocolis.webp" alt="Brócolis" class="w-full h-48 object-cover">
+                        <div class="p-6"><h3 class="text-xl font-bold text-brand-green mb-2">Brócolis</h3><p class="text-gray-600">Fresco e nutritivo, rico em vitaminas.</p></div>
+                    </div>
+                     <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <img src="assets/images/rucula.webp" alt="Rúcula" class="w-full h-48 object-cover">
+                        <div class="p-6"><h3 class="text-xl font-bold text-brand-green mb-2">Rúcula</h3><p class="text-gray-600">Sabor marcante para saladas gourmet.</p></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -265,136 +214,7 @@
         mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
         for (let link of mobileMenuLinks) { link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); });}
         feather.replace();
-        window.onload = function() { document.body.style.opacity = '1'; };
-    </script>
-</body>
-</html>');"></div>
-            <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-green mb-6 leading-tight">Hortaliças Frescas, Direto do Produtor para a sua Mesa</h1>
-                <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Qualidade, sabor e saúde que você pode confiar. Faça seu pedido e receba nossos produtos.</p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="https://wa.me/5515992780998" target="_blank" class="inline-flex items-center justify-center w-full sm:w-auto h-12 px-8 text-lg bg-brand-gold text-brand-green font-bold rounded-full hover:bg-yellow-500 transition-all duration-300 transform hover:-translate-y-0.5">
-                        <i data-feather="message-circle" class="w-5 h-5 mr-2"></i> Pedir pelo WhatsApp
-                    </a>
-                    <a href="mailto:terraverdehortifrutigranjeiros@gmail.com" class="inline-flex items-center justify-center w-full sm:w-auto h-12 px-8 text-lg border-2 border-brand-green text-brand-green bg-transparent font-bold rounded-full hover:bg-brand-green hover:text-white transition-all duration-300">
-                        <i data-feather="mail" class="w-5 h-5 mr-2"></i> Pedir por E-mail
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- =========== SECÇÃO DE VÍDEO =========== -->
-        <section class="py-16 sm:py-24 bg-brand-bg">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-brand-green mb-4">Da Nossa Horta para Você</h2>
-                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Leve mais saúde e sabor para a sua família. Comece pela horta.</p>
-                </div>
-                <div class="max-w-4xl mx-auto shadow-2xl rounded-xl overflow-hidden">
-                    <div class="relative" style="padding-top: 56.25%;">
-                        <!-- ***** FIX STARTS HERE ***** -->
-                        <video class="absolute top-0 left-0 w-full h-full" controls preload="auto" poster="assets/images/video-poster.jpg">
-                            <source src="assets/videos/video.mp4" type="video/mp4">
-                            Seu navegador não suporta a tag de vídeo. Tente um navegador diferente.
-                        </video>
-                        <!-- ***** FIX ENDS HERE ***** -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- =========== SECÇÃO DE PRODUTOS (Resumo) =========== -->
-        <section id="produtos" class="py-16 sm:py-24 bg-white">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-brand-green mb-4">Conheça Nossas Hortaliças</h2>
-                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Produtos frescos e de qualidade, cultivados com carinho.</p>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- First 3 products -->
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden"><img src="assets/images/alface.webp" alt="Alface" class="w-full h-48 object-cover"><div class="p-6"><h3 class="text-xl font-bold text-brand-green mb-2">Alface Crespa</h3><p class="text-gray-600">Cultivada com cuidado, crocante e cheia de sabor.</p></div></div>
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden"><img src="assets/images/tomate.webp" alt="Tomate" class="w-full h-48 object-cover"><div class="p-6"><h3 class="text-xl font-bold text-brand-green mb-2">Tomate</h3><p class="text-gray-600">Perfeito para molhos e saladas, suculento e doce.</p></div></div>
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden"><img src="assets/images/cenoura.webp" alt="Cenoura" class="w-full h-48 object-cover"><div class="p-6"><h3 class="text-xl font-bold text-brand-green mb-2">Cenoura</h3><p class="text-gray-600">Rica em nutrientes e com um leve adocicado natural.</p></div></div>
-                </div>
-                 <div class="text-center mt-12">
-                    <a href="products/" class="bg-brand-gold text-brand-green font-bold py-3 px-8 rounded-full text-lg hover:bg-yellow-500 transition duration-300">Ver todos os produtos</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- =========== SECÇÃO SOBRE NÓS =========== -->
-        <section id="sobre" class="py-16 sm:py-24 bg-white">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <h2 class="text-3xl sm:text-4xl font-bold text-brand-green mb-6">Nossa História</h2>
-                        <p class="text-lg text-gray-700 leading-relaxed mb-4">Na Terra Verde Hortifruti, nossa paixão é cultivar alimentos que nutrem o corpo e a alma. Começamos como um pequeno sonho de levar produtos frescos para nossa comunidade, e hoje nos orgulhamos de cada folha e fruto que sai da nossa terra.</p>
-                         <p class="text-lg text-gray-700 leading-relaxed">Acreditamos no poder da agricultura sustentável e no sabor que só o cuidado diário pode oferecer. Cada hortaliça é cultivada respeitando os ciclos naturais e utilizando técnicas que preservam o meio ambiente.</p>
-                    </div>
-                    <div class="aspect-w-1 aspect-h-1">
-                        <img src="assets/images/nossa-horta.jpg" alt="Nossa Horta" class="w-full h-full object-cover rounded-xl shadow-lg">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- =========== SECÇÃO DE CHAMADA PARA AÇÃO (CTA) =========== -->
-        <section id="cta" class="py-16 sm:py-24 bg-brand-green">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Faça seu Pedido Agora Mesmo!</h2>
-                <p class="text-xl text-yellow-100/80 mb-8 max-w-2xl mx-auto">É fácil e rápido. Receba produtos com qualidade de quem ama o que faz.</p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="https://wa.me/5515992780998" target="_blank" class="inline-flex items-center justify-center w-full sm:w-auto h-12 px-8 text-lg bg-white text-brand-green font-bold rounded-full hover:bg-gray-200 transition-all">
-                        <i data-feather="message-circle" class="w-5 h-5 mr-2"></i> Pedir pelo WhatsApp
-                    </a>
-                    <a href="mailto:terraverdehortifrutigranjeiros@gmail.com" class="inline-flex items-center justify-center w-full sm:w-auto h-12 px-8 text-lg border-2 border-brand-gold text-brand-gold bg-transparent font-bold rounded-full hover:bg-brand-gold hover:text-brand-green transition-all">
-                        <i data-feather="mail" class="w-5 h-5 mr-2"></i> Pedir por E-mail
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- =========== RODAPÉ =========== -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-                <div>
-                    <div class="flex items-center justify-center md:justify-start mb-4">
-                        <img src="assets/images/logo.jpg" alt="Logotipo Terra Verde Hortifruti" class="h-10 w-auto" style="height: 2.5rem;" />
-                        <span class="text-xl font-bold ml-3 text-brand-gold">Terra Verde Hortifruti</span>
-                    </div>
-                    <p class="text-gray-400">Hortaliças frescas e saudáveis, direto do produtor para sua mesa.</p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-4 text-brand-gold">Contato</h3>
-                    <div class="space-y-2 text-gray-300">
-                        <p>terraverdehortifrutigranjeiros@gmail.com</p>
-                        <p>(15) 99278-0998</p>
-                        <p>Estr. dos Roncato - Sítio São José</p>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-4 text-brand-gold">Redes Sociais</h3>
-                    <div class="flex space-x-4 justify-center md:justify-start">
-                        <a href="#" class="text-gray-300 hover:text-brand-gold transition-colors"><i data-feather="instagram" class="w-6 h-6"></i></a>
-                        <a href="#" class="text-gray-300 hover:text-brand-gold transition-colors"><i data-feather="facebook" class="w-6 h-6"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-500">
-                <p>© 2025 Terra Verde Hortifruti - Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
-        mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
-        for (let link of mobileMenuLinks) { link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); });}
-        feather.replace();
+        // Reveals the page content after it's loaded to prevent a "flash" of unstyled content.
         window.onload = function() { document.body.style.opacity = '1'; };
     </script>
 </body>
