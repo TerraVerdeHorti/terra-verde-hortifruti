@@ -37,12 +37,10 @@
 <body class="bg-brand-bg">
 
     <!-- =========== CABEÇALHO =========== -->
-    <!-- RESTORED: 'fixed' class is back for a header that sticks to the top. -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-brand-green shadow-lg">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <a href="#" class="flex items-center gap-3">
-                    <!-- UPDATED: Image path is now relative to your project folder -->
                     <img src="assets/images/logo.jpg" alt="Logotipo Terra Verde Hortifruti" class="h-12 w-auto" style="height: 3rem;" />
                     <span class="text-2xl font-bold text-brand-gold font-poppins hidden sm:block">Terra Verde Hortifruti</span>
                 </a>
@@ -69,9 +67,7 @@
 
     <main>
         <!-- =========== SECÇÃO PRINCIPAL (HERO) =========== -->
-        <!-- RESTORED: 'pt-20' creates space for the fixed header, 'min-h-screen' makes the section fill the screen height. -->
         <section class="relative pt-20 flex items-center justify-center min-h-screen bg-brand-bg">
-            <!-- UPDATED: Background image path is now relative -->
             <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10" style="background-image: url('https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80')"></div>
             <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-green mb-6 leading-tight">Hortaliças Frescas, Direto do Produtor para a sua Mesa</h1>
@@ -87,7 +83,7 @@
             </div>
         </section>
 
-              <!-- =========== SECÇÃO DE VÍDEO =========== -->
+        <!-- =========== SECÇÃO DE VÍDEO =========== -->
         <section class="py-16 sm:py-24 bg-brand-bg">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
@@ -96,11 +92,15 @@
                 </div>
                 <div class="max-w-4xl mx-auto shadow-2xl rounded-xl overflow-hidden">
                     <div class="relative" style="padding-top: 56.25%;">
-                        <!-- ***** FIX STARTS HERE ***** -->
+                        <!-- Fixed video source path -->
                         <video class="absolute top-0 left-0 w-full h-full" controls preload="auto" poster="assets/images/video-poster.jpg">
-                            <source src="blob/main/videos/video.mp4" type="video/mp4">
+                            <source src="videos/video.mp4" type="video/mp4">
                             Seu navegador não suporta a tag de vídeo. Tente um navegador diferente.
                         </video>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- =========== SECÇÃO DE PRODUTOS =========== -->
         <section id="produtos" class="py-16 sm:py-24 bg-white">
@@ -112,43 +112,61 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
                         <img src="assets/images/alface.webp" alt="Alface" class="w-full h-48 object-cover">
-                        <div class="p-6"><h3 class="text-xl font-bold text-brand-green mb-2">Alface Crespa</h3><p class="text-gray-600">Cultivada com cuidado, crocante e cheia de sabor.</p></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-brand-green mb-2">Alface Crespa</h3>
+                            <p class="text-gray-600">Cultivada com cuidado, crocante e cheia de sabor.</p>
+                        </div>
                     </div>
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
                         <img src="assets/images/tomate.webp" alt="Tomate" class="w-full h-48 object-cover">
-                        <div class="p-6"><h3 class="text-xl font-bold text-brand-green mb-2">Tomate</h3><p class="text-gray-600">Perfeito para molhos e saladas, suculento e doce.</p></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-brand-green mb-2">Tomate</h3>
+                            <p class="text-gray-600">Perfeito para molhos e saladas, suculento e doce.</p>
+                        </div>
                     </div>
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
                         <img src="assets/images/cenoura.webp" alt="Cenoura" class="w-full h-48 object-cover">
-                        <div class="p-6"><h3 class="text-xl font-bold text-brand-green mb-2">Cenoura</h3><p class="text-gray-600">Rica em nutrientes e com um leve adocicado natural.</p></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-brand-green mb-2">Cenoura</h3>
+                            <p class="text-gray-600">Rica em nutrientes e com um leve adocicado natural.</p>
+                        </div>
                     </div>
-                     <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
                         <img src="assets/images/beringela.webp" alt="Berinjela" class="w-full h-48 object-cover">
-                        <div class="p-6"><h3 class="text-xl font-bold text-brand-green mb-2">Berinjela</h3><p class="text-gray-600">Versátil e deliciosa, ideal para diversas receitas.</p></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-brand-green mb-2">Berinjela</h3>
+                            <p class="text-gray-600">Versátil e deliciosa, ideal para diversas receitas.</p>
+                        </div>
                     </div>
-                     <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
                         <img src="assets/images/brocolis.webp" alt="Brócolis" class="w-full h-48 object-cover">
-                        <div class="p-6"><h3 class="text-xl font-bold text-brand-green mb-2">Brócolis</h3><p class="text-gray-600">Fresco e nutritivo, rico em vitaminas.</p></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-brand-green mb-2">Brócolis</h3>
+                            <p class="text-gray-600">Fresco e nutritivo, rico em vitaminas.</p>
+                        </div>
                     </div>
-                     <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
                         <img src="assets/images/rucula.webp" alt="Rúcula" class="w-full h-48 object-cover">
-                        <div class="p-6"><h3 class="text-xl font-bold text-brand-green mb-2">Rúcula</h3><p class="text-gray-600">Sabor marcante para saladas gourmet.</p></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-brand-green mb-2">Rúcula</h3>
+                            <p class="text-gray-600">Sabor marcante para saladas gourmet.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- =========== SECÇÃO SOBRE NÓS =========== -->
-        <section id="sobre" class="py-16 sm:py-24 bg-white">
+        <section id="sobre" class="py-16 sm:py-24 bg-brand-bg">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
                         <h2 class="text-3xl sm:text-4xl font-bold text-brand-green mb-6">Nossa História</h2>
-                        <p class="text-lg text-gray-700 leading-relaxed mb-4">Na Terra Verde Hortifruti, nossa paixão é cultivar alimentos que nutrem o corpo e a alma. Começamos como um pequeno sonho de levar produtos frescos para nossa comunidade, e hoje nos orgulhamos de cada folha e fruto que sai da nossa terra.</p>
-                         <p class="text-lg text-gray-700 leading-relaxed">Acreditamos no poder da agricultura sustentável e no sabor que só o cuidado diário pode oferecer. Cada hortaliça é cultivada respeitando os ciclos naturais e utilizando técnicas que preservam o meio ambiente.</p>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">Terra Verde Hortifruti oferece uma amostra do que há de melhor em verduras e legumes frescos, cultivados com qualidade, cuidado e respeito à natureza.</p>
+                        <p class="text-lg text-gray-700 leading-relaxed">Nosso compromisso é levar do campo à mesa alimentos saudáveis e selecionados, ideais para abastecer redes de supermercados com produtos que conquistam pela aparência, sabor e durabilidade.</p>
                     </div>
-                    <div class="aspect-w-1 aspect-h-1">
-                        <img src="assets/images/nossa-horta.jpg" alt="Nossa Horta" class="w-full h-full object-cover rounded-xl shadow-lg">
+                    <div class="w-full">
+                        <img src="assets/images/nossa-horta.png" alt="Nossa Horta" class="w-full h-64 lg:h-80 object-cover rounded-xl shadow-lg">
                     </div>
                 </div>
             </div>
